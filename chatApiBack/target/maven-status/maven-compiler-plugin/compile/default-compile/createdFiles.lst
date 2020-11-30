@@ -1,0 +1,7 @@
+com\mx\chat\Application.class
+com\mx\chat\util\LambdaUtils.class
+com\mx\chat\business\ChatBusiness.class
+com\mx\chat\config\SwaggerConfig.class
+com\mx\chat\controller\ChatController.class
+com\mx\chat\config\WebMvcConfig.class
+com\mx\chat\config\WebSocketConfig.class
