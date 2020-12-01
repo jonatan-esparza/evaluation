@@ -1,0 +1,30 @@
+<div class="chat-1">
+    <p class="chat-salir"><a href="" class="btn btn-dark btn-block at-3" [routerLink]="['/']">&lt;&nbsp;Salir del chat</a></p>
+    <div class="chat-container" #scrollchat>
+        <table *ngFor="let a of myMessages" class="table" [ngClass]="{'msg-min': userChat.id == a.id}">
+            <tr>
+                <td>
+                    <div>
+                        <label class="font-bold">{{a.user}} dice:&nbsp;</label>
+                    </div>
+                    <div>
+                        <span>{{a.message}}</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="card p-5">
+        <h5>{{userChat.user}}</h5>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="form-control" id="message" (change)="sendMessage()" [(ngModel)]="userChat.message" autofocus/>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-block" (change)="sendMessage()">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

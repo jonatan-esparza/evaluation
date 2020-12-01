@@ -1,0 +1,9 @@
+<div class="chat-1">
+    <div class="card p-5">
+        <h1>CHAT</h1>
+        <br/>
+        <h5>Escribe tu nickname/alias</h5>
+        <input type="text" class="form-control" id="nickname" [(ngModel)]="User.name" maxlength = "40" onfocus="this.select()" autofocus/>
+        <a href="" class="btn btn-primary btn-block at-3" [routerLink]="['/chat', User.id, User.name]">Unirte al chat</a>
+    </div>
+</div>
