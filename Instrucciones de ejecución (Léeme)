@@ -23,9 +23,19 @@ npm run dev
 _______________________________________
 2- INICIAR CLIENTE:
 --------------------------------
-2.A) Abrir otra terminal.
+2.A) Abrir otra terminal, ejecutar los siguientes comandos:
 --------------------------------
+
+cd client
+
+npm i @angular/cli@latest
+
+npm i socket.io-client
+
+npm i bootstrap jquery @popperjs/core
+
 --------------------------------
+
 2.B) Ejecutar cliente:
 --------------------------------
 
